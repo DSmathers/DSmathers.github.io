@@ -6,6 +6,12 @@
     scroll-behavior: smooth;
 }
 
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
 a{text-decoration: none;}
 
 
@@ -27,6 +33,7 @@ a{text-decoration: none;}
     margin-left: auto;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 5px;
     font-size: 26px;
     font-family: 'Roboto', sans-serif;
     color: gainsboro;
@@ -45,7 +52,7 @@ a{text-decoration: none;}
 }
 
 .page_nav:hover{
-    border-bottom: 2px inset gainsboro;
+    border-bottom: 1px inset gainsboro;
     color: gainsboro;
 }
 
@@ -55,3 +62,34 @@ a{text-decoration: none;}
     margin-top: auto;
     margin-bottom:auto;
 }
+
+
+
+#welcome-section    {
+    height: 100vh;
+    min-height: 100%;
+    width: 100vw;
+    background-image: url('http://localhost:3000/images/laptopbg.jpg');
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#welcome-tag    {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    line-height: 64px;
+    color: gainsboro;
+    text-align: left;
+
+}
+
