@@ -1,24 +1,33 @@
+import { FaPhone, FaFacebookSquare, FaLinkedin, FaGithub } from 'react-icons/fa'
+import {MdEmail} from 'react-icons/md'
+
+
 const Contact = () => {
     return (
         <section id="contact-section" className="page_section">
             <h1>Contact Me</h1>
             <div className="contact-wrapper">
-            <div className="contact-links">
-                <h4>Contact Information</h4>
-                <p>You can reach me using the links below or simply fill out the form
-                    and I will get back to you within 24 hours. </p>
-               
-            </div>
-            <form className="contact-form">
-                <label>Name</label>
-                <input type="text" />
-                <label>Email</label>
-                <input type="email" />
-                <label>Message</label>
-                <textarea></textarea>
-                <button type="submit">Submit</button>
+                <div className="contact-links">
+                    <h4>Contact Info:</h4>
+                    <p><FaPhone/></p><p> (541) 841-2441</p>
+                    <p><MdEmail /></p><p>dsmathers91@gmail.com</p>
 
-            </form>
+                    <div className="social-links">
+                        <a href="http://www.linkedin.com/"><FaLinkedin/></a>
+                        <a href="http://www.facebook.com/"><FaFacebookSquare/></a>
+                        <a href="http://www.github.com/"><FaGithub/></a>
+                    </div>
+                      
+                </div>
+                <form className="contact-form">
+                    <label>Name</label>
+                    <input type="text" />
+                    <label>Email</label>
+                    <input type="email" />
+                    <label>Message</label>
+                    <textarea></textarea>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </section>
     )
