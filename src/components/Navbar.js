@@ -6,8 +6,8 @@ const Navbar = () => {
             <Link to="/" id="logo">&lt;DS /&gt;</Link>
         <ul id="page_nav_list">
             <Link to="/About" className="page_nav">About</Link>
-            <a href="#projects" className="page_nav">Projects</a> 
-            <a href="#contact" class="page_nav">Contact</a> 
+            <Link to="/Projects" className="page_nav">Projects</Link>
+            <Link to="/Contact" className="page_nav">Contact Me</Link>
             </ul>
         </nav>
       

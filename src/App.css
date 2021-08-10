@@ -125,3 +125,52 @@ a{text-decoration: none;}
     font-size: 64px;
 }
 
+.contact-wrapper    {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5em;
+}
+
+.contact-links  {
+    max-width: 40vw;
+}
+
+.contact-form   {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+    text-align: left;
+    border: 1px inset black;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.contact-form button {
+    width: 40%;
+    margin: auto;
+    margin-top: 12px;
+    padding: 7px;
+}
+
+.contact-form label{
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.contact-form input, textarea{
+    font-size: 16px;
+}
+
+.contact-form input{
+    height: 20px;
+    padding: 2px;
+}
+
+.contact-form textarea{
+    height: 40px;
+    max-width: 100%;
+}
