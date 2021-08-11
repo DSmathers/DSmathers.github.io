@@ -121,7 +121,13 @@ a{text-decoration: none;}
     margin-bottom: 20px;
 }
 
-#dev-icons  {
+#devIcons   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#devIcons_span  {
     font-size: 64px;
 }
 
@@ -171,6 +177,7 @@ a{text-decoration: none;}
 
 .social-links a{
     font-size: 32px;
+    color: black;
 }
 
 

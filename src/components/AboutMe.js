@@ -16,8 +16,8 @@ const AboutMe = () => {
             <h2>
                 I have experience working with the following tools;
             </h2>
-            <div>
-                <span id="dev-icons"><SiHtml5/> <SiCss3 /> <SiBootstrap/> <SiJavascript/> <SiReact/> <SiNodeDotJs/></span>
+            <div id="devIcons">
+                <span id="devIcons_span"><SiHtml5/> <SiCss3 /> <SiJavascript/> <SiReact/> <SiNodeDotJs/></span>
                 
             </div>
             </div>
