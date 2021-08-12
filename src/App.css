@@ -22,7 +22,7 @@ a{text-decoration: none;}
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4) ;
+    background-color: rgba(0, 0, 0, 0.7) ;
     z-index: 1;
 }
 
@@ -108,26 +108,7 @@ a{text-decoration: none;}
     text-align: left;
 }
 
-
-#about-me-section  p    {
-    max-width: 80%;
-    text-align: left;
-    line-height: 30px;
-    letter-spacing: 1px;
-    padding: 3rem;
-}
-
-
-#about-me-section p{
-    font-size: 22px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-#about-me-section h2{
-    margin-bottom: 20px;
-}
+/* Icons for Programming Languages on About Page */
 
 #devIcons   {
     display: flex;
@@ -139,18 +120,15 @@ a{text-decoration: none;}
     font-size: 64px;
 }
 
-
+/* Contact Page Styling */
 
 .contact-wrapper    {
     width: 100%;
     display: flex;
     flex-direction: row;
-    grid-gap: 3rem;
-    justify-content: center;
     flex-wrap: wrap;
+    grid-gap: 3rem;
 }
-
-
 
 .contact-links  {
     width: 250px;
@@ -234,6 +212,7 @@ a{text-decoration: none;}
     max-width: 100%;
 }
 
+/* Project Page Styling */
 
 #projects-grid  {
     display: flex;
@@ -254,12 +233,14 @@ a{text-decoration: none;}
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
-.project_image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.project_image {
+    background-size: cover;
+    box-sizing: border-box;
 }
 
 .card_data   {
@@ -273,12 +254,13 @@ a{text-decoration: none;}
 }
 
 .card_title {
-    margin: 5px 0px;
+    margin: auto;
     letter-spacing: 0.5px;
 }
 
 .card_details   {
-    margin: auto;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .card_links {

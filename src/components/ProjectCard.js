@@ -1,26 +1,29 @@
-import projectThumb1 from '../assets/thumbnails/projectThumb1.png'
-import projectThumb2 from '../assets/thumbnails/projectThumb2.png'
-
-const ProjectCard = () => {
+const ProjectCard = ({projects}) => {
     return (
-        <div className="project_card">
-            <div className="project_image">
-                <img src={projectThumb1} />
-            </div>
-            <div className="card_data">
-                <div className="card_title">
-                    <h4>Compound Interest Calculator</h4>
+        <>
+        {projects.map((project) => {
+            const {title, img, description, gitLink, demoLink} = project;
+            return (
+                <div className="project_card">
+                    <div className="project_image" style={{backgroundImage: "url(" + img + ")"}}>
+                       {/* Project Image Div uses a background image, left empty */}
+                    </div>
+                    <div className="card_data">
+                        <div className="card_title">
+                            <h4>{title}</h4>
+                        </div>
+                        <div className="card_details">
+                            <p>{description}</p>
+                        </div>
+                        <div className="card_links">
+                            <a href={gitLink} target="_blank" className="cardLink">GitHub</a>
+                            <a href={demoLink} target="_blank" className="cardLink">Demo Site</a>
+                        </div>
+                    </div>
                 </div>
-                <div className="card_details">
-                    <p>Inspired from the compound interest calculator on investor.gov</p>
-                </div>
-                <div className="card_links">
-                    <a href="#" className="cardLink">GitHub</a>
-                    <a href="#" className="cardLink">Demo Site</a>
-                </div>
-            </div>
-        </div>
-        
+            );
+        })}
+        </>
     )
 }
 export default ProjectCard

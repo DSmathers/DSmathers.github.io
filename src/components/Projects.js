@@ -1,7 +1,9 @@
+import React, { useState } from "react"
 import ProjectCard from "./ProjectCard"
-import ProjectData from './ProjectData'
+import Data from './Data'
 
 const Projects = () => {
+    const [projects, setProject] = useState(Data);
     return (
         <section id="portfolio-section" className="page_section">
             <div className="section_wrapper">
@@ -9,7 +11,7 @@ const Projects = () => {
                     <h1>My Recent Work</h1>
                 </div>
                 <div id="projects-grid"> 
-                <ProjectCard />
+                <ProjectCard projects={projects}/>
                 </div>
             </div>
         </section>
