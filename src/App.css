@@ -64,9 +64,7 @@ a{text-decoration: none;}
 }
 
 .page_section   {
-    height: 100vh;
     min-height: 100%;
-    width: 100vw;
     text-align: center;
     margin: auto;
     align-items: center;
@@ -76,11 +74,28 @@ a{text-decoration: none;}
     flex-wrap: wrap;
 }
 
+.section_wrapper    {
+    padding: 64px;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.section_header {
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .25rem;
+    width: 100%;
+    padding: .25rem;
+}
+
 
 #welcome-section    {
     background-image: url('./assets/imgs/laptopbg.jpg');
     background-size: cover;
     justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
 }
 
 
@@ -91,24 +106,17 @@ a{text-decoration: none;}
     line-height: 64px;
     color: gainsboro;
     text-align: left;
-
 }
 
 
-
-#about-me-section  h1, p    {
-    margin-left: 10vw;
-    margin-right: 10vw;
+#about-me-section  p    {
+    max-width: 80%;
     text-align: left;
     line-height: 30px;
     letter-spacing: 1px;
+    padding: 3rem;
 }
 
-#about-me-section h1{
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 10px;
-}
 
 #about-me-section p{
     font-size: 22px;
@@ -131,22 +139,21 @@ a{text-decoration: none;}
     font-size: 64px;
 }
 
-#contact-section h1{
-    font-size: 22px;
-    margin: auto;
-    margin-bottom: 0;
-}
 
 
 .contact-wrapper    {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5em;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+
+
 .contact-links  {
-    max-width: 40vw;
+    width: 250px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -184,7 +191,7 @@ a{text-decoration: none;}
 .contact-form   {
     display: flex;
     flex-direction: column;
-    max-width: 40vw;
+    width: 400px;
     text-align: left;
     border: 1px inset black;
     border-radius: 1rem;
@@ -225,4 +232,96 @@ a{text-decoration: none;}
 .contact-form textarea{
     height: 40px;
     max-width: 100%;
+}
+
+
+#projects-grid  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 3rem;
+    margin: auto;
+    width: 100%;
+}
+
+
+/* Project Card Styling */
+
+.project_card   {
+    border: 2px solid black;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    width: 300px;
+}
+
+.project_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_data   {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.card_title {
+    margin: 5px 0px;
+    letter-spacing: 0.5px;
+}
+
+.card_details   {
+    margin: auto;
+}
+
+.card_links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .2rem;
+    justify-content: center;
+    width: 100%;
+    margin: .3rem;
+}
+
+.card_links{
+    margin: 5px;
+}
+
+.cardLink {
+    background-color: gainsboro;
+    font-style: inset;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid black;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2px;
+}
+
+.card_links a:hover{
+    color: gainsboro;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+
+
+@media screen and (max-width: 600px)    {
+    .page_nav, #logo {
+        font-size: 16px;
+    }
+
+    #navbar {
+        height: 32px;
+    }
+
+    .section_wrapper{
+        padding: 32px;
+    }
+
 }

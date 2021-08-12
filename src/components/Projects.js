@@ -1,11 +1,16 @@
-
-
+import ProjectCard from "./ProjectCard"
+import ProjectData from './ProjectData'
 
 const Projects = () => {
     return (
         <section id="portfolio-section" className="page_section">
-            <h1>Projects I've Recently Worked On;</h1>
-            <div id="projects-grid">
+            <div className="section_wrapper">
+                <div className="section_header">
+                    <h1>My Recent Work</h1>
+                </div>
+                <div id="projects-grid"> 
+                <ProjectCard />
+                </div>
             </div>
         </section>
     )
