@@ -3,6 +3,7 @@ import projectThumb2 from '../assets/thumbnails/projectThumb2.png'
 
 const Data =  [
     {
+        key: 1,
         img: projectThumb1,
         title: "Compound Interest Calc",
         description: "Compound Interest Calculator using vanilla JS. I did this to get some practice using user variables",
@@ -10,6 +11,7 @@ const Data =  [
         demoLink: "https://compoundinterestcalc.danielsmathers.repl.co/",
     },
     {
+        key: 2,
         img: projectThumb2,
         title: "React Portfolio Website",
         description: "I wanted to practice using React, where better to start than my personal website?",

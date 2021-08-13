@@ -2,9 +2,9 @@ const ProjectCard = ({projects}) => {
     return (
         <>
         {projects.map((project) => {
-            const {title, img, description, gitLink, demoLink} = project;
+            const {key, title, img, description, gitLink, demoLink} = project;
             return (
-                <div className="project_card">
+                <div className="project_card" key={key}>
                     <div className="project_image" style={{backgroundImage: "url(" + img + ")"}}>
                        {/* Project Image Div uses a background image, left empty */}
                     </div>
@@ -16,8 +16,8 @@ const ProjectCard = ({projects}) => {
                             <p>{description}</p>
                         </div>
                         <div className="card_links">
-                            <a href={gitLink} target="_blank" className="cardLink">GitHub</a>
-                            <a href={demoLink} target="_blank" className="cardLink">Demo Site</a>
+                            <a href={gitLink} target="_blank" className="cardLink" rel="noreferrer">GitHub</a>
+                            <a href={demoLink} target="_blank" className="cardLink" rel="noreferrer">Demo Site</a>
                         </div>
                     </div>
                 </div>

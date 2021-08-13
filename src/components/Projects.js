@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard"
 import Data from './Data'
 
 const Projects = () => {
-    const [projects, setProject] = useState(Data);
+    const [projects] = useState(Data);
     return (
         <section id="portfolio-section" className="page_section">
             <div className="section_wrapper">

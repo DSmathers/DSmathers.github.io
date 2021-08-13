@@ -22,9 +22,9 @@ const Contact = () => {
                         <p><MdEmail /></p><p>dsmathers91@gmail.com</p>
 
                         <div className="social-links">
-                            <a href="https://www.linkedin.com/in/daniel-smathers-512857183/" target="_blank"><FaLinkedin/></a>
-                            <a href="http://www.facebook.com/daniel.smathers.7" target="_blank"><FaFacebookSquare/></a>
-                            <a href="https://github.com/DSmathers" target="_blank"><FaGithub/></a>
+                            <a href="https://www.linkedin.com/in/daniel-smathers-512857183/" target="_blank" rel="noreferrer"><FaLinkedin/></a>
+                            <a href="http://www.facebook.com/daniel.smathers.7" target="_blank" rel="noreferrer"><FaFacebookSquare/></a>
+                            <a href="https://github.com/DSmathers" target="_blank" rel="noreferrer"><FaGithub/></a>
                         </div>
                         
                     </div>
