@@ -210,7 +210,10 @@ a{text-decoration: none;}
     box-shadow: 2px 2px 25px  rgba(0, 0, 0, 0.6);
     padding: 10px;
     margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 10vh;
 }
+
 
 .contact-form button {
     width: 60%;
@@ -425,11 +428,13 @@ a{text-decoration: none;}
     #navbar {
         height: 32px;
     }
-
+    
+   
     .section_wrapper{
         padding-top: 32px;
         height: 100%;
     }
+    
 
     h1 {
         font-size: 28px;
