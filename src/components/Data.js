@@ -18,6 +18,38 @@ const Data =  [
         gitLink: "https://github.com/DSmathers/react-portfolio",
         demoLink: "#",
     },
+    {
+        key: 3,
+        img: projectThumb2,
+        title: "React Portfolio Website",
+        description: "I wanted to practice using React, where better to start than my personal website?",
+        gitLink: "https://github.com/DSmathers/react-portfolio",
+        demoLink: "#",
+    },
+    {
+        key: 4,
+        img: projectThumb2,
+        title: "React Portfolio Website",
+        description: "I wanted to practice using React, where better to start than my personal website?",
+        gitLink: "https://github.com/DSmathers/react-portfolio",
+        demoLink: "#",
+    },
+    {
+        key: 5,
+        img: projectThumb2,
+        title: "React Portfolio Website",
+        description: "I wanted to practice using React, where better to start than my personal website?",
+        gitLink: "https://github.com/DSmathers/react-portfolio",
+        demoLink: "#",
+    },
+    {
+        key: 6,
+        img: projectThumb2,
+        title: "React Portfolio Website",
+        description: "I wanted to practice using React, where better to start than my personal website?",
+        gitLink: "https://github.com/DSmathers/react-portfolio",
+        demoLink: "#",
+    },
 ]
 
 export default Data;

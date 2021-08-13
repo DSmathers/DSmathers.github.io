@@ -31,7 +31,7 @@ a{text-decoration: none;}
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7) ;
+    background-color: rgb(15, 56, 65) ;
     z-index: 1;
 }
 
@@ -45,7 +45,7 @@ a{text-decoration: none;}
     padding-bottom: 5px;
     font-size: 26px;
     font-family: 'Roboto', sans-serif;
-    color: gainsboro;
+    color: whitesmoke;
 }
 
 #logo   {
@@ -56,7 +56,7 @@ a{text-decoration: none;}
     font-size: 32px;
     letter-spacing: 2px;
     font-family: 'Roboto', sans-serif;
-    color: gainsboro;
+    color: whitesmoke;
     
 }
 
@@ -73,14 +73,10 @@ a{text-decoration: none;}
 }
 
 .page_section   {
-    height: inherit;
+    height: 100%;
     text-align: center;
     margin: auto;
     align-items: center;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .section_wrapper    {
@@ -89,19 +85,11 @@ a{text-decoration: none;}
     padding-top: 64px;
 }
 
-.section_header {
-    font-size: 32px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: .25rem;
-    width: inherit;
-    padding: .25rem;
-}
 
 
 #welcome-section    {
-    background-image: url('./assets/imgs/laptopbg.jpg');
+    background-color: #264653;
     background-size: cover;
-    justify-content: space-around;
     height: 100vh;
     width: 100vw;
 }
@@ -114,6 +102,10 @@ a{text-decoration: none;}
     line-height: 64px;
     color: gainsboro;
     text-align: left;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    top: 30vh;
 }
 
 
@@ -121,22 +113,47 @@ a{text-decoration: none;}
 
 
 /* About Page */
+.about_me_body  {
+    margin: auto;
+    padding: 5vw;
+    text-align: left;
+    color: white;
+    background-color: #264653;
+}
+
+#about_me_head    {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .1rem;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+#about_me_head h1   {
+    font-weight: bold;
+}
+
+.about_me_text  {
+    text-align: left;
+    text-indent: 3rem;
+    padding: 1.25rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 22px;
+}
+
+.about_me_text a {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #f4a261;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .about_me_footer   {
-    position: fixed;
+    top: auto;
     bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
-
-.about_me_body  {
-    margin: auto;
-    padding: 5vw;
-    text-align: left;
-    text-indent: 10vw;
-}
-
-
 #devIcons_span  {
     font-size: 64px;
     margin-left: 10vw;
@@ -149,68 +166,62 @@ a{text-decoration: none;}
 
 /* Contact Page Styling */
 
-.contact-wrapper    {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-gap: 3rem;
-    justify-content: center;
-}
 
-.contact-links  {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: 1px inset black;
-    border-radius: 1px;
+
+.contact_body   {
+    margin: auto;
+    padding: 5vw;
+    text-align: left;
+    color: white;
+    background-color: #264653;
     
 }
-.contact-links h4{
-    padding: 7px;
-    margin: 5px;
+
+#contact_head   {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .1rem;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: .5rem;
 }
 
-.contact-links i, p {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.social-links    {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-top: 1px solid black;
-    width: 90%;
+#social_links_span {
     margin: auto;
-    padding-top: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: .5rem;
 }
 
-.social-links a{
-    font-size: 32px;
-    color: black;
+#social_links_span a  {
+    color: white;
+    font-size: 22px;
 }
-
 
 .contact-form   {
+    background-color:rgb(15, 56, 65);
     display: flex;
     height: 100%;
     width: 400px;
     flex-direction: column;
     text-align: left;
-    border: 1px inset black;
-    border-radius: 1rem;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 25px  rgba(0, 0, 0, 0.6);
     padding: 10px;
+    margin: auto;
 }
 
 .contact-form button {
-    width: 40%;
-    margin-right: auto;
+    width: 60%;
+    margin: auto;
     margin-top: 12px;
     padding: 7px;
+    background-color: #f4a261;
 }
 
 .contact-form button:hover  {
-    background-color: black;
+    background-color: #e76f51;
     color: gainsboro;
     cursor: pointer;
 }
@@ -221,10 +232,13 @@ a{text-decoration: none;}
     letter-spacing: 1px;
     margin-bottom: 7px;
     margin-top: 7px;
+    color: #f4a261;
 }
 
 .contact-form input, textarea{
     font-size: 16px;
+    background-color: rgba(72, 68, 68, 0.6);
+    color: white;
 }
 
 .contact-form input{
@@ -237,8 +251,22 @@ a{text-decoration: none;}
     max-width: 100%;
 }
 
-/* Project Page Styling */
 
+/* Projects Page */
+.projects_body  {
+
+    text-align: center;
+    background-color:#264653;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .1rem;
+    text-align: center;
+    color: white;
+}
+
+.projects_body h1   {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5vw;
+}
 #projects-grid  {
     display: flex;
     flex-direction: row;
@@ -247,15 +275,15 @@ a{text-decoration: none;}
     grid-gap: 3rem;
     margin: auto;
     width: 100%;
+    padding: 10px;
 }
 
 
 /* Project Card Styling */
 
 .project_card   {
-    border: 2px solid black;
     border-radius: 1.25rem;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 25px  rgba(0, 0, 0, 0.6);
     overflow: hidden;
     width: 300px;
     height: 300px;
@@ -265,27 +293,33 @@ a{text-decoration: none;}
 
 .project_image {
     background-size: cover;
-    box-sizing: border-box;
+    height: 100%;
 }
 
 .card_data   {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    text-align: left;
     align-items: center;
-    padding: 10px 20px;
     box-sizing: border-box;
+    background-color:rgb(15, 56, 65);
+    color: white;
 }
 
 .card_title {
     margin: auto;
     letter-spacing: 0.5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #f4a261;
 }
 
 .card_details   {
-    text-overflow: ellipsis;
     width: 100%;
+    text-indent: 10px;
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 12px;
 }
 
 .card_links {
@@ -297,12 +331,9 @@ a{text-decoration: none;}
     margin: .3rem;
 }
 
-.card_links{
-    margin: 5px;
-}
 
 .cardLink {
-    background-color: gainsboro;
+    background-color: #f4a261;
     font-style: inset;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.6);
@@ -314,7 +345,7 @@ a{text-decoration: none;}
 
 .card_links a:hover{
     color: gainsboro;
-    background-color:rgba(0, 0, 0, 0.6);
+    background-color: #e76f51;
 }
 
 /*Form Response Splash Page Styling*/
@@ -418,5 +449,10 @@ a{text-decoration: none;}
         justify-content: space-evenly;
     }
 
+    #projects-grid  {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 5px;
+    }
 
 }
