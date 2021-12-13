@@ -10,7 +10,7 @@ const Data =  [
         title: "Compound Interest Calc",
         description: "Compound Interest Calculator using vanilla JS. I did this to get some practice using user variables",
         gitLink: "https://github.com/DSmathers/CompoundInterestCalc",
-        demoLink: "https://compoundinterestcalc.danielsmathers.repl.co/",
+        demoLink: "https://dsmathers.github.io/CompoundInterestCalc/",
     },
     {
         key: 2,
